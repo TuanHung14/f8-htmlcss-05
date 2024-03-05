@@ -12,6 +12,9 @@ input,textarea,select,button{
     font-size: inherit;
     font-family: inherit;
 }
+:root{
+    --primary-font:"Inter", sans-serif;
+}
 /* common */
 .container{
     width: 1170px;
@@ -61,6 +64,12 @@ a{
     font-weight: 400;
     line-height: 1.66;
     margin-top: 20px;
+}
+.section-heading{
+    color: #212832;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
 }
 /* header */
 .header{
@@ -248,4 +257,133 @@ strong{
     color: #FFF;
     font-size: 1.6rem;
     font-weight: 400;
+}
+.work{
+    padding: 80px 0;
+}
+.work__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.work__img-wrap{
+    width: 470px;
+    position: relative;
+}
+.work__img-wrap::after{
+    content: url(../img/work-01.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.work__img{
+    position: relative;
+    z-index: 1;
+    padding: 0 7px;
+    width: 100%;
+}
+.work-card{
+    position: absolute;
+    z-index: 1;
+    top: 76px;
+    right: 62px;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    background: #7264D6;
+}
+.work-card::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #FFF;
+}
+.work-card__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+}
+.work-congratulations{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    bottom: 96px;
+    right: -100px;
+    width: 226px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #FFFDFA;
+    box-shadow: 0px 14px 34px 0px rgba(0, 0, 0, 0.07);
+}
+.work-congratulations__img-wrap{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #4AB5E3;
+    border: 1px solid inherit;
+    border-radius: 6px;
+}
+.work-congratulations__img-wrap::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #FFF;
+}
+.work-congratulations__img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    z-index: 1;
+}
+.work-congratulations__inner{
+    margin-left: 10px;
+}
+.work-congratulations__title{
+    color: #212832;
+    font-family: var(--primary-font);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.work-congratulations__desc{
+    margin-top: 5px;
+    color: #696D76;
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.work__content{
+    width: 470px;
+}
+.work__list{
+    margin-top: 70px;
+}
+.work-item{
+    margin-top: 30px;
+}
+.work-item__heading{
+    color: #212832;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.45; 
+}
+.work-item__desc{
+    margin-top: 16px;
+    color: #696D76;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
 }
